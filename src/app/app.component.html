@@ -4,7 +4,14 @@
         <mat-icon>menu</mat-icon>
       </button>
       <span>Calendar</span>
-      <span class="example-spacer"></span>
+      <span class="example-spacer">
+        <mat-button-toggle-group appearance="legacy" #toglleGroup="matButtonToggleGroup" name="calendarFilter" aria-label="Font Style">
+          <mat-button-toggle value="today" checked (click)="navigatePage(toglleGroup)">Today</mat-button-toggle>
+          <mat-button-toggle value="daily" (click)="navigatePage(toglleGroup)">Daily</mat-button-toggle>
+          <mat-button-toggle value="weekly" (click)="navigatePage(toglleGroup)">Weekly</mat-button-toggle>
+          <mat-button-toggle value="monthly" (click)="navigatePage(toglleGroup)">Monthly</mat-button-toggle>
+        </mat-button-toggle-group>
+      </span>
     </mat-toolbar>
   </p>
   <mat-grid-list cols="12" rowHeight="1:5">

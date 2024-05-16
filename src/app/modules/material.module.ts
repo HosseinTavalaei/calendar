@@ -6,7 +6,8 @@ import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCardModule} from '@angular/material/card';
-import {provideNativeDateAdapter} from '@angular/material/core'
+import {provideNativeDateAdapter} from '@angular/material/core';
+import {MatButtonToggleModule} from '@angular/material/button-toggle'
 const modules: any = [
   MatIconModule,
   MatButtonModule,
@@ -14,7 +15,8 @@ const modules: any = [
   MatGridListModule,
   MatDatepickerModule,
   MatCardModule,
-  CommonModule
+  CommonModule,
+  MatButtonToggleModule
 ]
 
 @NgModule({
